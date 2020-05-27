@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mainmaster.master.cs" Inherits="PFCF.Mainmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">                            <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/vendor/font-awesom/css/font-awesome.min.css">  <!-- Font Awesome -->
+	<link rel="stylesheet" href="css/vendor/mmenu/jquery.mmenu.all.css" />          <!-- Menu Responsive -->
+	<link rel="stylesheet" href="css/vendor/animate-wow/animate.css">               <!-- Animation WOW -->
+
+    <link rel="stylesheet" href="css/vendor/labelauty/labelauty.css">               <!-- Checkbox form Style -->
+	<link rel="stylesheet" href="css/vendor/nouislider/nouislider.min.css">         <!-- Slider Price -->
+    <link rel="stylesheet" href="css/vendor/easydropdown/easydropdown.css">         <!-- Select form Style -->
+    <link rel="stylesheet" href="css/ui-spinner.css">                               <!-- Spinner -->
+
+	<link rel="stylesheet" href="css/menu.css">                                     <!-- Include Menu stylesheet -->
+	<link rel="stylesheet" href="css/custom.css">                                   <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/template/index.css">							<!-- Index -->
+    <link rel="stylesheet" href="css/media-query.css">                              <!-- Media Query -->
+
+	<link href="http://fonts.googleapis.com/css?family=BenchNine:300,400,700" rel="stylesheet" type="text/css">
+
+	<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="script/modernizr.min.js"></script> <!-- Modernizr -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title>PROHOME - Responsive Real Estate Template</title>
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fixed-header">
+	<form id="form1" runat="server">
+	<div id="page-container">
+		<header class="menu-line" id="header-container-box">
+            
+			<div class="container" id="menu-nav">
+				<div class="logo">
+					<a href="#"><img id="logo-header" src="images/logo_x1.png" alt="Logo" /></a>
+				</div><!-- /.logo -->
+				<a id="mobile-menu-button" href="#mobile-menu" class="visible-xs"><i class="fa fa-bars"></i></a>
+				<nav id="navigation">
+					<ul>
+							<li >
+								<a class="mycurrent" href="index.aspx">Home</a>
+								
+							</li>
+                            
+                            <li class="has_submenu" >
+								<a >Suppliers</a>
+                                <ul>
+                                    <li><a href="steelproduct.aspx">Steel Suppliers</a></li>
+                                    <li><a href="cementproduct.aspx">Cement suppliers</a></li>
+                                    <li><a href="engineerproduct.aspx">Engineers</a></li>
+                                    <li><a href="builderproduct.aspx">Builders</a></li>
+                                </ul>
+								
+							</li>
+							
+                            <li >
+								<a href="about.aspx">About</a>
+								
+							</li>
+							<li>
+								<a href="contact.aspx">Contact</a>
+								
+							</li>
+                            <li>
+							<a href="ulog.aspx" ><i class="icon fa fa-user user"></i> Login</a>
+							</li>
+                            <li>
+							<a href="uregister.aspx" ><i class="icon fa fa-pencil-square-o"></i> Sign up</a>
+							</li>
+
+							<li >
+								<asp:LinkButton ID="link" data-toggle="modal" data-target="#modal-contact" data-section="modal-contact" runat="server"><i class="fa fa-comment-o"></i>Feedback</asp:LinkButton>
+							</li>
+						</ul>
+				</nav>
+			</div>
+			<a href="#" class="fixed-button top"><i class="fa fa-chevron-up"></i></a>
+		</header>
+            
+                <div>
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <!--main containts-->
+                     </asp:ContentPlaceHolder>
+                </div>
+            
+        <footer id="footer-page" class="section-color">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-3">
+						<span class="title with-icon">
+							<img class="logo-footer" src="images/mini-logo-x1.png" alt="logo" />
+							Shortly About Us
+						</span>
+						<span class="text">
+						This is a web portal for the business of fabrication and construction material. By our website contacting to long distance seller is made easy and simple. Anyone can register his business on the portal and sell his products to the customers.
+						<ul class="link-extra">
+							<li><a href="about.aspx">About Us</a></li>
+                         </ul>
+                        </span>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<span class="title">CALL US NOW</span>
+						<span class="phone"><i class="fa fa-phone"></i> (011)-8800-555</span>
+						<span class="address">
+						</span>
+						P.B. No. 54, <strong>Pandharpur</strong><br />
+						<i class="fa fa-map-marker"></i> Ranjani Road, Solapur, Maharashtra 413304
+                        <ul class="link-extra">
+							<li><a href="contact.aspx">Contact Us</a></li>
+                         </ul>
+					</div> 
+					<div class="hidden-xs hidden-sm col-md-3">
+						<span class="title">Make Money with Us</span>
+						<ul class="link-extra">
+							<li><a href="create-business.aspx">Create Your Business</a></li>
+							<li><a href="Seller_Log.aspx">Business Login</a></li>
+                            <li><a href="create-business.aspx">Sell On PROHOME</a></li>
+
+							
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<span class="title">Let Us Help You</span>
+						<ul class="link-extra">
+							<li><a href="uregister.aspx">Create User Account</a></li>
+							<li><a href="ulog.aspx">User Login</a></li>
+                            <li><a href="contact.aspx">Help</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="credits">
+				<div class="container">
+					<div class="row">
+						<div class="hidden-xs col-md-6 credits-text">Copyright 2018 <b>ProHome</b> | All Rights Reserved | Designed By SO</div>
+						<div class="col-md-6">
+							<ul class="social-icons">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+        
+
+		<div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+
+				<div class="form-container full-fixed">
+					
+						<div id="form-modal-contact" class="box active modal-contact">
+							<h2 class="title">How can we help?</h2>
+							<h3 class="sub-title">Please send us your thoughts by filling out the below form.</h3>
+							<ul class="object-contact">
+								<li><a href="#" class="active"><i class="fa fa-comment-o"></i>Feedback</a></li>
+							</ul>
+							<div class="field">
+                                <asp:TextBox ID="msg" class="form-control" placeholder="Your message"  TextMode="MultiLine" runat="server"></asp:TextBox>
+							</div>
+							<div class="field">
+								<asp:TextBox ID="sum" class="form-control" placeholder="Short summary"  runat="server"></asp:TextBox>
+								<i class="fa fa-tag"></i>
+							</div>
+							<div class="field">
+								<asp:TextBox ID="email" class="form-control" placeholder="Your email"  runat="server"></asp:TextBox>
+                                <i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="field footer-form text-right">
+                                
+                                
+								<asp:Button ID="send" runat="server" class="btn btn-default button-form"  OnClick="send_Click" Text="send" />
+							</div>
+                            
+						</div>
+					
+				</div>
+
+
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+        </div><!-- /.page container -->
+        </form>
+
+        <script	src="script/jquery.min.js"></script>		<!-- jQuery	(necessary for Bootstrap's JavaScript plugins) -->
+	<script	src="script/jquery-ui.min.js"></script>		<!-- jQuery	UI is a	curated	set	of user	interface interactions,	effects, widgets, and themes -->
+	<script	src="script/bootstrap.min.js"></script>		<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+	<script	src="script/vendor/mmenu/mmenu.min.all.js"></script>					<!-- Menu Responsive -->
+	<script	src="script/vendor/animation-wow/wow.min.js"></script>					<!-- Animate Script	-->
+	<script src="script/vendor/labelauty/labelauty.min.js"></script>					<!-- Checkbox Script -->
+	<script	src="script/vendor/parallax/parallax.min.js"></script>						<!-- Parallax Script -->
+	<script	src="script/vendor/images-fill/imagesloaded.min.js"></script>			<!-- Loaded	image with ImageFill -->
+	<script src="script/vendor/images-fill/imagefill.min.js"></script>					<!-- ImageFill Script -->
+	<script	src="script/vendor/easydropdown/jquery.easydropdown.min.js"></script>	<!-- Select	list Script	-->
+	<script	src="script/vendor/carousel/responsiveCarousel.min.js"></script>		<!-- Carousel Script -->
+
+	<script	src="script/custom.js"></script>		<!-- Custom	Script -->
+	
+
+	<script>
+	    (function (i, s, o, g, r, a, m) {
+	        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+	            (i[r].q = i[r].q || []).push(arguments)
+	        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	    })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+
+	    ga('create', 'UA-62553398-1', 'auto');
+	    ga('send', 'pageview');
+	</script>
+
+</body>
+</html>

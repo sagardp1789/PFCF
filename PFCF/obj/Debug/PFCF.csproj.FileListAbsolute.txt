@@ -1,0 +1,15 @@
+F:\projects\asp.net\PFCF\PFCF\bin\PFCF.dll
+F:\projects\asp.net\PFCF\PFCF\bin\PFCF.pdb
+F:\projects\asp.net\PFCF\PFCF\obj\Debug\PFCF.csprojResolveAssemblyReference.cache
+F:\projects\asp.net\PFCF\PFCF\obj\Debug\PFCF.dll
+F:\projects\asp.net\PFCF\PFCF\obj\Debug\PFCF.pdb
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.Edm.dll
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.OData.dll
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.Services.Client.dll
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.Services.dll
+F:\projects\asp.net\PFCF\PFCF\bin\System.Spatial.dll
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.Edm.xml
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.OData.xml
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.Services.xml
+F:\projects\asp.net\PFCF\PFCF\bin\Microsoft.Data.Services.Client.xml
+F:\projects\asp.net\PFCF\PFCF\bin\System.Spatial.xml

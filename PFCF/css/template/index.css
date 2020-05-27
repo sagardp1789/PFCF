@@ -1,0 +1,179 @@
+/* ONLY INDEX
+================================== */
+#index-box {
+  background-image: url(../../images/sample/image-index/bg-parallax2.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  margin-top: 58px;
+  border-bottom: 10px solid #50C8B4;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  background-position: center center;
+}
+#index-box .container {
+  position: relative;
+  z-index: 1;
+}
+#index-box .cover {
+  background-color: rgba(0, 0, 0, 0.12);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+#index-box .img-device-container {
+ 
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 285px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#index-box h1 {
+  font-family: "BenchNine";
+  color: #EEE;
+  font-size: 100px;
+  font-weight: 100;
+  letter-spacing: -4px;
+  margin: 100px 0 0;
+  line-height: 1;
+}
+#index-box h1 b {
+  font-weight: 600;
+  color: #50C8B4;
+}
+#index-box h2 {
+  font-size: 30px;
+  color: #FFF;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+.index-container.grey {
+  background-color: #F5F5F5;
+  border-top: 1px solid #E9E9E9;
+  border-bottom: 1px solid #E9E9E9;
+}
+.index-container .link-index {
+  display: block;
+  padding: 20px 0;
+  margin: 20px 0;
+  text-align: center;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -ms-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.index-container .link-index:hover {
+  transform: scale(1.03);
+  /* CSS3 */
+  -moz-transform: scale(1.03);
+  /* Firefox */
+  -webkit-transform: scale(1.03);
+  /* Webkit */
+  -o-transform: scale(1.03);
+  /* Opera */
+  -ms-transform: scale(1.03);
+  /* IE 9 */
+}
+.index-container .link-index h1 {
+  background-color: #50C8B4;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0 4px;
+  padding: 6px 0 8px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* INDEX PAGE
+================================== */
+.index-container .link-index .icon {
+  font-size: 30px;
+  color: #38B49E;
+  -webkit-transition: 0.1s all ease-in-out;
+  -moz-transition: 0.1s all ease-in-out;
+  -ms-transition: 0.1s all ease-in-out;
+  -o-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+.index-container .icon:hover {
+  transform: scale(1.4);
+  /* CSS3 */
+  -moz-transform: scale(1.4);
+  /* Firefox */
+  -webkit-transform: scale(1.4);
+  /* Webkit */
+  -o-transform: scale(1.4);
+  /* Opera */
+  -ms-transform: scale(1.4);
+  /* IE 9 */
+}
+#footer-index {
+  height: 380px;
+  position: relative;
+  margin-top: 50px;
+}
+#footer-index .sun,
+#footer-index .cloud,
+#footer-index .sky1,
+#footer-index .sky2 {
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+}
+#footer-index .sky1 {
+  background-image: url(../../images/parallax/parallax-header1.png);
+  z-index: 3;
+}
+#footer-index .sky2 {
+  background-image: url(../../images/parallax/parallax-header2.png);
+  z-index: 2;
+}
+#footer-index .sun {
+  background-image: url(../../images/parallax/parallax-header-sun.png);
+  background-position: center top;
+  z-index: 0;
+}
+#footer-index .cloud {
+  background-image: url(../../images/parallax/parallax-header-cloud.png);
+  background-position: center top;
+  z-index: 1;
+}
+#footer-index .credit {
+  height: 50px;
+  padding: 14px 0 0;
+  background-color: #47ACA0;
+  color: #FFF;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* MEDIA SCREEN VERSION
+================================== */
+@media screen and (max-width: 768px) {
+  #index-box h1 {
+    font-size: 70px;
+    margin-top: 70px;
+  }
+  #index-box h2 {
+    font-size: 20px;
+  }
+}
